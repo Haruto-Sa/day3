@@ -41,6 +41,3 @@ Activityもアプリが終了する時や、画面を閉じる時に呼ばれま
 
 アクティビティのライフサイクルより引用  
 https://developer.android.com/guide/components/activities/activity-lifecycle
-
-## 課題
-〇〇を実行してみよう！
