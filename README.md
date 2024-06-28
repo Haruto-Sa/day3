@@ -27,6 +27,8 @@ git clone https://github.com/CyberAgentHack/android-bootcamp-iwate-pref.git
 
 ### 宿題
 Column、RowをはじめとしたJetpack ComposeのUIを調査して自分なりにレイアウトを構築してみましょう！  
+レイアウトできたらスクリーンショット(または動画)を撮り、`#android_ブートキャンプ岩手`に投稿してください！  
+(サイバーエージェント社員にメンションもお願いします)
 
 参考サイト  
 https://developer.android.com/develop/ui/compose/layouts/basics  
@@ -39,7 +41,7 @@ https://developer.android.com/codelabs/jetpack-compose-layouts
 4. Lazyリスト
 
 ### 宿題
-TODO
+未公開
 
 ## Day3
 1. Kotlin Coroutines
@@ -49,7 +51,7 @@ TODO
 5. その他
 
 ### 宿題
-TODO
+未公開
 
 ## Day4
 1. Kotlin Multiplatform
