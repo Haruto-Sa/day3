@@ -21,7 +21,16 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    Greeting("Compose") // ← 書き換え
+                    Column {
+                        Text(
+                            text = "自己紹介",
+                            style = MaterialTheme.typography.titleLarge,
+                        )
+                        Text(
+                            text = "私の名前は〇〇です",
+                            style = MaterialTheme.typography.bodyMedium,
+                        )
+                    }
                 }
             }
         }
@@ -30,15 +39,15 @@ class MainActivity : ComponentActivity() {
 ```
 
 ### 書き換えができたら実行
-画面に `Hello, Compose!`が出ていれば書き換え成功です！
+画面に自己紹介文が表示されれば、書き換え成功です！
 
 ### 解説
-MainActivity.ktのL33にGreetingという関数が定義されています。  
-この関数はComposable関数と言ってJetpack ComposeでUIを構築する際のUIコンポーネントの一つになります。  
+ここで`Column`という関数を利用しました。  
+この関数はComposable関数と言ってJetpack ComposeでUIを構築する際のUIコンポーネントの一つになります。 
+
 Composable関数の特徴としては `@Composable` が関数の前についています。  
+そのため`Greeting`関数もComposable関数になっています。  
 このように `@Composable` をつけるだけでJetpack ComposeのUIコンポーネントを作成することができます。  
-GreetingではTextというComposable関数が呼ばれており、内部では `"Hello $name!"` という文字列が入っています。  
-nameというのはGreetingの引数のことで、今回 `World` から `Compose` に変更したことにより、表示される文言が変わりました。
 
 > [!TIP]
 > kotlinの関数はキャメルケースでの宣言が一般的ですが、Composable関数ではパスカルケースで定義します。
